@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Main_0</class>
+ <widget class="QMainWindow" name="Main_0">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>926</width>
+    <height>564</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Django Purger</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icons/win_icon.png</normaloff>icons/win_icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Triangular</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QGridLayout" name="cw_gl">
+    <item row="9" column="3" rowspan="2">
+     <widget class="QWidget" name="dir_wget" native="true">
+      <layout class="QGridLayout" name="gridLayout"/>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="3">
+     <layout class="QHBoxLayout" name="reset_hl">
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="reset_btn">
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>WaitCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>Reset</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>icons/icons8-rotate-right-filled-96.png</normaloff>icons/icons8-rotate-right-filled-96.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="2">
+        <widget class="QGroupBox" name="app_gb">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="title">
+          <string>DJANGO APPLICATION</string>
+         </property>
+         <layout class="QVBoxLayout" name="da_gb">
+          <item>
+           <widget class="QLineEdit" name="bd_le">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>/path/to/your/djang_project</string>
+            </property>
+            <property name="clearButtonEnabled">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bd_btn">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>Loop</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icons/icons8-synchronize-filled-96.png</normaloff>icons/icons8-synchronize-filled-96.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="app_gb_ahl"/>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="app_gb_hl0">
+            <item>
+             <widget class="QPushButton" name="select_btn">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Select All</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-check-all-filled-96.png</normaloff>icons/icons8-check-all-filled-96.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="deselect_btn">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Deselect All</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-uncheck-all-filled-100.png</normaloff>icons/icons8-uncheck-all-filled-100.png</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="push_hl">
+            <item>
+             <spacer name="push_spacer_0">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="push_btn">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Push Targets</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-natural-user-interface-2-filled-100.png</normaloff>icons/icons8-natural-user-interface-2-filled-100.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="push_spacer_1">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QGroupBox" name="cw_gb">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="title">
+          <string>ACTIONS</string>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+         <layout class="QGridLayout" name="cw_gb_gl">
+          <item row="6" column="1">
+           <widget class="QRadioButton" name="venv_yes_radio">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>&amp;Yes</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="2">
+           <widget class="QRadioButton" name="venv_no_radio">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>&amp;No</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="label">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Virtual Environment ?</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="0" colspan="3">
+           <widget class="QPushButton" name="migration_btn">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>BusyCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>Run Migrations</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icons/icons8-upload-database-archive-100.png</normaloff>icons/icons8-upload-database-archive-100.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0" colspan="3">
+           <widget class="QPushButton" name="purge_btn">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>Purge Targets</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icons/icons8-delete-database-100.png</normaloff>icons/icons8-delete-database-100.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Venv Level*</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="QSpinBox" name="venv_level_sb">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="minimum">
+             <number>-10</number>
+            </property>
+            <property name="maximum">
+             <number>-2</number>
+            </property>
+            <property name="value">
+             <number>-2</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="0" rowspan="2">
+        <widget class="QTreeView" name="treeView">
+         <property name="cursor" stdset="0">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContents</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QFrame" name="frame_2">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="1" column="0">
+        <layout class="QGridLayout" name="console_gl">
+         <item row="4" column="1">
+          <widget class="QPushButton" name="clear_btn">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>ArrowCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Clear</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>icons/icons8-clear-formatting-filled-100.png</normaloff>icons/icons8-clear-formatting-filled-100.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="3" column="0" colspan="2">
+          <widget class="QTextEdit" name="console_log">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="sizeAdjustPolicy">
+            <enum>QAbstractScrollArea::AdjustToContents</enum>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="9" column="0" colspan="3">
+     <widget class="QLabel" name="label_3">
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>*Venv level ==  the reversed position of the virtual environment name in the path ( i;e : /home/user/Desktop/*venv*/project ), in this case the venv level == -2.</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="dp_statusbar">
+   <property name="cursor">
+    <cursorShape>BlankCursor</cursorShape>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>treeView</tabstop>
+  <tabstop>bd_le</tabstop>
+  <tabstop>bd_btn</tabstop>
+  <tabstop>select_btn</tabstop>
+  <tabstop>deselect_btn</tabstop>
+  <tabstop>push_btn</tabstop>
+  <tabstop>purge_btn</tabstop>
+  <tabstop>venv_yes_radio</tabstop>
+  <tabstop>venv_no_radio</tabstop>
+  <tabstop>migration_btn</tabstop>
+  <tabstop>console_log</tabstop>
+  <tabstop>clear_btn</tabstop>
+  <tabstop>reset_btn</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>venv_yes_radio</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>venv_level_sb</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>336</x>
+     <y>331</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>347</x>
+     <y>388</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
