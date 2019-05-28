@@ -29,7 +29,7 @@ it is simple:
 		
 	5- Run migrations 
 		NB0: if you are using a virtualenv, your django project has to be inside the virtualenv folder because ... i designed it that way.
-		NB1: you can bypass virtualenv by choosing no, the GUI will add 'python3' to all the shell commands, it will work if you have django installed in your global python.
+		NB1: you can bypass virtualenv by choosing no, the GUI will add 'python3' to all the shell commands, it will work if you have django installed in your global python environment.
 		NB3: The GUI can't output the shell commands errors, so it might be a good idea to check if those migrations were run correctly.
 		
 	6- Clear the console
